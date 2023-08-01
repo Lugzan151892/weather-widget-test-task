@@ -43,11 +43,11 @@
         padding: 0 5px;
         &__menu {
             max-width: 20px;
-            cursor: pointer;
+            cursor: grab;
         }
         &__delete {
             max-width: 20px;
-            cursor: grab;
+            cursor: pointer;
         }
     }
 </style>
