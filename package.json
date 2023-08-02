@@ -2,7 +2,17 @@
   "name": "weather-widget-test-task",
   "version": "0.0.0",
   "homepage": "./",
+  "type": "module",
+  "files": ["dist"],
+  "main": "./dist/weather-widget.umd.cjs",
+  "module": "./dist/weather-widget.js",
   "private": true,
+  "exports": {
+    ".": {
+      "import": "./dist/weather-widget.js",
+      "require": "./dist/weather-widget.umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",

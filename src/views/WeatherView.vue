@@ -64,6 +64,15 @@
             overflow-y: auto;
             max-height: 100%;
         }
+        &__list::-webkit-scrollbar {
+            width: 5px;
+            background-color: #ebf3ff;
+        }
+        &__list::-webkit-scrollbar-thumb {
+            background-color:#2680FB;
+            border-radius: 10px;
+        }
+        
         &__text {
             margin: 30px 5px;
         }
