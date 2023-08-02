@@ -16,7 +16,7 @@
         </div>
         <div class="modal__input">
             <p class="modal__input-title">Add Location:</p>
-            <input v-model="store.newCityValue" @input="handleInput" class="modal__input-input" placeholder="Enter city name" />
+            <input v-model="store.newCityValue" @input="handleInput" class="modal__input-input" placeholder="Enter city name"  @keyup.enter="handleAddNewCity"/>
             <img class="modal__input-image modal__header-image" src="../assets/enter.svg" alt="enter" @click="handleAddNewCity">
         </div>
         <p class="modal__error" v-if="store.currentModalError"> {{ store.currentModalError }} </p>
